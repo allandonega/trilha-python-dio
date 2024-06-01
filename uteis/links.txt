@@ -1,0 +1,4 @@
+A branch <main> está no meu diretorio src-scripts/trilha-python-dio
+
+fork do projeto da DIO
+    https://github.com/allandonega/trilha-python-dio
