@@ -1,3 +1,4 @@
+from datetime import datetime
 class Pessoa:
     def __init__(self, nome, ano_nascimento):
         self.nome = nome
@@ -5,9 +6,9 @@ class Pessoa:
 
     @property
     def idade(self):
-        _ano_atual = 2022
+        _ano_atual = datetime.now().year
         return _ano_atual - self._ano_nascimento
 
 
-pessoa = Pessoa("Guilherme", 1994)
+pessoa = Pessoa("Allan Donegá", 1981)
 print(f"Nome: {pessoa.nome} \tIdade: {pessoa.idade}")
