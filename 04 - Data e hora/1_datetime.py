@@ -2,7 +2,7 @@ from datetime import date, datetime, time
 
 data = date(2023, 7, 10)
 print(data)
-print(date.today())
+print(f"hoje:", date.today())
 
 
 data_hora = datetime(2023, 7, 10)
