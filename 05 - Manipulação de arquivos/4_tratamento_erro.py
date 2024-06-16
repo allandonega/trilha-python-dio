@@ -1,6 +1,9 @@
 from pathlib import Path
 
+print(f"| Definindo o ROOT_PATH")
 ROOT_PATH = Path(__file__).parent
+
+print(f"|_ [ ROOT_PATH ] : {ROOT_PATH}")
 
 
 try:

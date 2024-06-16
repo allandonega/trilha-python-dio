@@ -1,28 +1,22 @@
+path_relativo_arquivo="trilha-python-dio/05 - Manipulação de arquivos"
+nome_arquivo="lorem.txt"
+
 # Lembre-se de alterar o caminho do arquivo, para o caminho completo da sua máquina!
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-print(arquivo.read())
-arquivo.close()
+#arquivo = open(path_relativo_arquivo + "/"+ nome_arquivo, "r")
+#print(arquivo.read())
+#arquivo.close()
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
+
+path_completo_arquivo = "/Users/allandonega/workspace/scripts/src-scripts/trilha-python-dio/05 - Manipulação de arquivos"
+arquivo = open(path_completo_arquivo + "/"+ nome_arquivo, "r")
 print(arquivo.readline())
 arquivo.close()
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-print(arquivo.readlines())
-arquivo.close()
+arquivo = open(path_completo_arquivo + "/"+ nome_arquivo, "r")
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
 # tip
 while len(linha := arquivo.readline()):
-    print(linha)
+    print(f"Iterando:, {linha}")
 
 arquivo.close()

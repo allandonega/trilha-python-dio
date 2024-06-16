@@ -1,0 +1,6 @@
+Escrevendo dados em um novo arquivo.
+2024-06-16 10:32:21.668543
+escrevendo
+um
+novo
+texto
