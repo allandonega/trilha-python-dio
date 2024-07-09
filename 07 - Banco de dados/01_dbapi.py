@@ -47,6 +47,12 @@ def listar_clientes(cursor):
     return cursor.execute("SELECT * FROM clientes ORDER BY nome DESC;")
 
 
+def apagar_tabela(cursor):
+    return cursor.execute("DROP TABLE clientes ")
+
+def apagar_dados_tabela(cursor):
+    return cursor.execute("TRUNCATE TABLE clientes ")
+
 clientes = listar_clientes(cursor)
 for cliente in clientes:
     print(dict(cliente))
